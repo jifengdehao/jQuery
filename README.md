@@ -46,11 +46,33 @@
 ```
 #### ajax 模块
 ```
-	$.ajax()
+	$.ajax(obj)
+
+	obj ={
+		url: string,
+		type: get | post, 
+		param: {usrename:123},可选
+		datatype: json | xml | text | html |jsonp ,
+		async : true | false, (默认为true) 可选
+		jsonp: 默认为callback,可选
+		jsonpCallback: 默认为你添加一个函数名 myjsonp1492847033628,可选
+		success: function(res),
+		error: function()
+	}
+
 ```
 #### 动画模块
 ```
-	animation()
+	animation(params, speed, timing, callback)
+	
+	params 是一个对象 {'top':'240px','left':'600px'}
+
+	speed  时间过程 '3s'
+
+	timing 运动规律 ease-in | ease-out | ease-in-out | ease |　linear
+
+	callback　完成后的回调函数	
+
 ```
 
 ### 这里是 animation的例子， <a href="https://newyoung21.github.io/query-/">狠狠的点击这里demo</a>
