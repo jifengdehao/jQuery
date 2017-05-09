@@ -311,8 +311,8 @@
  			},
  			find: function(str) {
  				var dom = this.elements;
- 				return new Query.fn.init(str,dom);
- 				// return this;
+ 				// return new Query.fn.init(str,dom);
+ 				return this;
  			},
  			addcss: function(dom, sty, value) {
  				for (var i = 0; i < dom.length; i++) {
