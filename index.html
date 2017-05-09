@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>$框架</title>
+	<script src="./@.js"></script>
+	<style type="text/css">
+		div{
+			position: absolute;
+			left: 10px;
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			color: #fff;
+		}
+		.div1{
+			top: 0;
+			background: red;
+		}
+		.div2{
+			background: green;
+			top: 120px;
+		}
+		.div3{
+			background: blue;
+			top:240px;
+		}
+		.div4{
+			background: #000;
+			top: 360px;
+		}
+		.ani{
+			position: absolute;
+			top: 480px;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">1</div>
+	<div class="div2">2</div>
+	<div class="div3">3</div>
+	<div class="div4">4</div>
+	<button class="ani">动画按钮</button>
+	<script>
+	$('.ani').on('click',function(){
+		$('.div1').animation({'top':'500px','left':'600px'},'3s','ease-in',function(){
+			alert("div1已完成");
+		});
+		$('.div2').animation({'top':'360px','left':'600px'},'10s','ease',function(e){
+			    alert("div2已完成");
+		});
+		$('.div3').animation({'top':'0px','left':'600px'},'6s','ease-out',function(e){
+			    alert("div3已完成");
+		});
+		$('.div4').animation({'top':'240px','left':'600px'},'8s','ease-in-out',function(e){
+			    alert("div4已完成");
+		});
+	});
+	</script>
+</body>
+</html>
