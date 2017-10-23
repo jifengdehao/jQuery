@@ -74,5 +74,3 @@
 	callback　完成后的回调函数	
 
 ```
-
-### 这里是 animation的例子， <a href="https://newyoung21.github.io/query-/">狠狠的点击这里demo</a>
